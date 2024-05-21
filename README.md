@@ -11,6 +11,7 @@ PRIMERA FASE
 2- Para poder instalar su controlador nvidia, debe eliminar su controlador de video anterior con este código en una ventana de terminal:
 
     sudo apt-get remove nvidia* && sudo apt-get autoremove
+    sudo apt-get --purge remove xserver-xorg-video-nouveau
 
 3- Instalar paquetes Básicos para el contralor descargado
 
