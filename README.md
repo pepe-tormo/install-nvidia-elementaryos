@@ -36,5 +36,6 @@ PRIMERA FASE
     sudo update-initramfs -u
 
 7- Finalmente, reinicie:
+
     sudo reboot
 
