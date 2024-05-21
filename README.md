@@ -18,24 +18,23 @@ PRIMERA FASE
 
 4- Incluir en la lista negra el controlador nouveau editando este archivo con:
 
-sudo nano /etc/modprobe.d/blacklist-nouveau.conf
-Contenido:
--------------------------------
-blacklist nouveau
-blacklist lbm-nouveau
-options nouveau modeset=0
-alias nouveau off
-alias lbm-nouveau off
--------------------------------
+    sudo nano /etc/modprobe.d/blacklist-nouveau.conf
 
-5-  Deshabilite el Kernel nouveau escribiendo los siguientes comandos ( nouveau-kms.confpuede que no exista, está bien):
+    blacklist nouveau
+    blacklist lbm-nouveau
+    options nouveau modeset=0
+    alias nouveau off
+    alias lbm-nouveau off
+
+
+5- Deshabilite el Kernel nouveau escribiendo los siguientes comandos ( nouveau-kms.confpuede que no exista, está bien):
 
     echo options nouveau modeset=0 | sudo tee -a /etc/modprobe.d/nouveau-kms.conf
 
-6-  Regenerar el kernel initramfs:
+6- Regenerar el kernel initramfs:
 
-sudo update-initramfs -u
+    sudo update-initramfs -u
 
-7-  Finalmente, reinicie:
-sudo reboot
+7- Finalmente, reinicie:
+    sudo reboot
 
