@@ -21,11 +21,11 @@ PRIMERA FASE
 
     sudo nano /etc/modprobe.d/blacklist-nouveau.conf
 
-    blacklist nouveau
-    blacklist lbm-nouveau
-    options nouveau modeset=0
-    alias nouveau off
-    alias lbm-nouveau off
+blacklist nouveau
+blacklist lbm-nouveau
+options nouveau modeset=0
+alias nouveau off
+alias lbm-nouveau off
 
 
 5- Deshabilite el Kernel nouveau escribiendo los siguientes comandos ( nouveau-kms.confpuede que no exista, está bien):
